@@ -3,7 +3,6 @@ This checklist guides you through Machine Learning projects.
 
 There are eight main steps:
 
-0. [Admin Panels](#admin-panels)
 1. [Frame the problem and look at the big picture.] (#Frame-the-problem)
 2. Get the data.
 3. Explore the data to gain insights.
@@ -16,6 +15,8 @@ There are eight main steps:
 ---
 
 ## Admin Panels
+
+---
 
 ## Frame the Problem 
 Get the Data 
