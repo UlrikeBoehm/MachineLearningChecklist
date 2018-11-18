@@ -105,15 +105,32 @@ Notes:
 
 ## Fine-Tune the System
 
-* Blah
-* Blah
+Notes:
+* You will want to use as much as possible for this step, especialluy as you move towards the end of fine-tuning.
+* As always automate what you have.
+
+* Fine-tune the hyperparameters using cross-validation.
+      * Treat your data tranaformation choices as hyperparameters, especially when you are not sure about them (e.g., should  I replace missing values with zero or with the median value? Or just drop the rows?)
+      * Unless there are very few hyperparameter values to explore, prefer random search over grid search. If training is very long, you may prefer a Bayesian optimization approach (e.g., using Gaussian process priors, as described by Jasper Snoek, Hugo Larochelle, and Ryan Adams).
+* Try Ensemble methods. Combining your best models will often perform better than running them individually.
+* Once you are confident about your final model, measure its performance on the test set to estimate the generalization error.
 
 ## Present your Solution
 
-* Blah
-* Blah
+* Document what you have done.
+* Create a nice presentation.
+      * Make sure you highlight the big picture first.
+* Explain why your solution achieves the business objective.
+* Don't forget to present interesting points you notice along the way.
+      * Describe what worked and what did not.
+      * List your assumptions and your system's limitations.
+* Ensure your key findings are communicated through beautiful visualizations or easy-to-remember statements (e.g., "the median income is the number-one predictor of housing prices.").
 
 ## Launch!
 
-* Blah
-* Blah
+* Get your solution ready for production (plug into production data inputs, write unit tests, etc.).
+* Write monitoring code to check yoru system's live performance at regular intervals and trigger alerts when it drops.
+      * Beware of slow degradation too: models tend to "rot" as data evolves.
+      * Measuring performance may require a human pipeline (e.g., via a crowdsource service).
+      * Also monitor your inputs' quality (e.g., malfunctioning sensor sending random values, or another team's ourput becoming stale). This is particularly important for online learning systems.
+* Retrain yoru models on a regular basis on fresh data (automate as much as possible).
