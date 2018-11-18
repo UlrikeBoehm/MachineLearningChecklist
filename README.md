@@ -120,6 +120,6 @@ Notes: You will want to use as much as possible for this step, especialluy as yo
 * Get your solution ready for production (plug into production data inputs, write unit tests, etc.).
 * Write monitoring code to check yoru system's live performance at regular intervals and trigger alerts when it drops.
       * Beware of slow degradation too: models tend to "rot" as data evolves.
-      * Measuring performance may require a human pipeline (e.g., via a crowdsource service).
+      * Measuring performance may require a human pipeline (e.g., via a crowdsource service). 
       * Also monitor your inputs' quality (e.g., malfunctioning sensor sending random values, or another team's ourput becoming stale). This is particularly important for online learning systems.
 * Retrain yoru models on a regular basis on fresh data (automate as much as possible).
