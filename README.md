@@ -31,42 +31,35 @@ There are eight main steps:
 
 ## Get the Data 
 
-
 * Blah
 * Blah
 
 ## Explore the Data 
-
 
 * Blah
 * Blah
 
 ## Prepare the Data
 
-
 * Blah
 * Blah
 
 ## Short-List Promising Models
-
 
 * Blah
 * Blah
 
 ## Fine-Tune the System
 
-
 * Blah
 * Blah
 
 ## Present your Solution
 
-
 * Blah
 * Blah
 
 ## Launch!
-
 
 * Blah
 * Blah
