@@ -47,9 +47,9 @@ Note: automate as much as possible so you can easily get fresh data.
 
 Note: try to get insights from a field expert for these steps.
 
-1 Create a copy of the data for exploration (sampling it down to a managable size if necessary).
-2 Create a Jupyter notebook to keep a record of your data exploration.\
-3 Study each attribute and its characteristics:
+* Create a copy of the data for exploration (sampling it down to a managable size if necessary).
+* Create a Jupyter notebook to keep a record of your data exploration.\
+* Study each attribute and its characteristics:
     * Name
     * Type (categorical, int/float, bounded/unbounded, text, structured, etc.)
     * % of missing values
@@ -67,9 +67,25 @@ Note: try to get insights from a field expert for these steps.
 ## Prepare the Data
 
 Note: 
-
-* Blah
-* Blah
+* Work on copies of the data (keep the original dataset intact.)
+* Write functions for all data transformations you apply, for five reasons:
+      * So you can easily prepare the data the next time you get a fresh dataset
+      * So you can apply these transformations in future projects
+      * To clean and prepare the test set
+      * To clean and prepare new data instances once your solution is live
+      * To make it easy to treat your preparation choice as hyperparameters
+      
+* Data cleaning:
+      * Fix or remove outliers (optional).
+      * Fill in missing values (e.g., with zero, mean, median...) or drop their rows (or columns).
+* Feature selection (optional):
+      * Drop the attributes that provide no useful information for the task.
+* Feature engineering, where appropriate:
+      * Discretize continuous features.
+      * Decompose features (e.g., categorical, date/time, etc.)
+      * Add promising transformations of features (e.g., log(x), sqrt(x), x^2, etc.)
+      * Aggregate features into promising new features.
+* Feature scaling: standardize or normalize features.
 
 ## Short-List Promising Models
 
