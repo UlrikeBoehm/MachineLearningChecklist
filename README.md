@@ -89,8 +89,19 @@ Note:
 
 ## Short-List Promising Models
 
-* Blah
-* Blah
+Notes:
+* If the data is huge, you may want to sample smaller training sets so you can train many different models in a reasonable time (be aware that this penalizes complex models such as large neural nets or Random Forests).
+* Once again, try to automate these steps as much as possible.
+
+* Train many quick and dirty models from different categories (e.g., linear, naive Bayes, SVM, Random Forests, neural nets, etc.) using standard parameters.
+* Measure and compare their performance:
+      * For each model, use N-fold cross-validation and compute the mean and standard deviation of the performance measure on the N folds.
+* Analyze the most significant variables for each algorithm.
+* Analyze the type of errors the models make.
+      * What data would a human have used to avoid these errors?
+* Have a quick round of feature selection and engineering.
+* Have one or two more quick iterations of the five previous steps.
+* Short-list the top three or five most promising models, preferring models that make different types of errors.
 
 ## Fine-Tune the System
 
