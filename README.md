@@ -47,9 +47,9 @@ Note: automate as much as possible so you can easily get fresh data.
 
 Note: try to get insights from a field expert for these steps.
 
-* Create a copy of the data for exploration (sampling it down to a managable size if necessary).
-* Create a Jupyter notebook to keep a record of your data exploration.\
-* Study each attribute and its characteristics:
+1 Create a copy of the data for exploration (sampling it down to a managable size if necessary).
+2 Create a Jupyter notebook to keep a record of your data exploration.\
+3 Study each attribute and its characteristics:
     * Name
     * Type (categorical, int/float, bounded/unbounded, text, structured, etc.)
     * % of missing values
@@ -65,6 +65,8 @@ Note: try to get insights from a field expert for these steps.
 * Document what you have learned.
 
 ## Prepare the Data
+
+Note: 
 
 * Blah
 * Blah
