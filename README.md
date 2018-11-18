@@ -31,13 +31,38 @@ There are eight main steps:
 
 ## Get the Data 
 
-* Blah
-* Blah
+Note: automate as much as possible so you can easily get fresh data.
+
+* List the data you need and how much you need.
+* Find and document where you can get that data.
+* Check how much space it will take.
+* Check legal obligations, and get aurorization if necessary.
+* Get access authorizations.
+* Create a workspace (with enough storage space).
+* Get the data.
+* Convert the data to a format you can easily manipulate (without changing the data itself).
+* Sample a test set, put it aside, and never look at it (no data snooping!).
 
 ## Explore the Data 
 
-* Blah
-* Blah
+Note: try to get insights from a field expert for these steps.
+
+* Create a copy of the data for exploration (sampling it down to a managable size if necessary).
+* Create a Jupyter notebook to keep a record of your data exploration.\
+* Study each attribute and its characteristics:
+    * Name
+    * Type (categorical, int/float, bounded/unbounded, text, structured, etc.)
+    * % of missing values
+    * Noisiness and type of noise (stochastic, outliers, rounding errors, etc.)
+    * Possibly useful for the task
+    * Type of distribution (Gaussian, uniform, logarithmic, etc.)
+* For supervised learning tasks, identify the target attribute(s)
+* Visualize the data.
+* Study the correlation between attributes.
+* Study how you would solve the problem manually.
+* Identify the promising transformations you may want to apply.
+* Identify extra data that would be useful.
+* Document what you have learned.
 
 ## Prepare the Data
 
